@@ -23,6 +23,16 @@ ORDER BY
     avg_salary_usd DESC
 LIMIT 25;
 
+
+SELECT
+    job_location = 'Anywhere' AS is_anywhere,
+    job_work_from_home        AS is_wfh_flag,
+    COUNT(*)                  AS postings
+FROM job_postings_fact
+WHERE job_title_short = 'Data Analyst'
+GROUP BY 1, 2
+ORDER BY postings DESC;
+
 /*
 ===============================================================================
                                 KEY INSIGHTS

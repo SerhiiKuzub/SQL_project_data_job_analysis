@@ -34,11 +34,11 @@ LIMIT 10;
 
 This query retrieves the 10 highest-paying remote Data Analyst roles with non-null salary data.
 
-- Salaries range from $63,782 to $74,835 per year, with an average of about $68,600.
+- Salaries range from $63,782 to $74,835 per year, with an average of about $69,145.
 - Delivery Hero has the highest salary in this result set at $74,835, followed by adidas ($73,795) and About You ($72,564).
 - Several roles have more specific titles, including Product Data Analyst,
   Business Data Analyst, Data Analyst (Finance), and Data Quality Analyst.
-- The results include Full-time, Part-time, and Internship positions..
+- The results include Full-time, Part-time, and Internship positions.
 
 Note: These results only reflect postings in this dataset that explicitly list an annual salary for remote 'Data Analyst' roles. They should not be generalized to the entire global job market.
 
@@ -46,7 +46,7 @@ Note: These results only reflect postings in this dataset that explicitly list a
 
 Запит вибирає 10 найвище оплачуваних віддалених вакансій Data Analyst із зазначеною річною зарплатою.
 
-- Зарплати у вибраних вакансіях становлять від $63 782 до $74 835 на рік, а середня зарплата — близько $68 600.
+- Зарплати у вибраних вакансіях становлять від $63 782 до $74 835 на рік, а середня зарплата — близько $69 145.
 - Найвищу компенсацію у цій вибірці має Delivery Hero ($74 835), за ним йдуть adidas ($73 795) та About You ($72 564).
 - У ТОП-10 часто трапляються спеціалізовані позиції: Product Data Analyst (adidas, Allianz), Business Data Analyst (About You, Deutsche Bank), Data Analyst (Finance) (Wayfair, HelloFresh) та Data Quality Analyst (Personio, N26).
 - До результатів увійшли вакансії з типами зайнятості Full-time, Part-time та Internship.
