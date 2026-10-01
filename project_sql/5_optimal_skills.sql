@@ -1,7 +1,7 @@
 -- ============================================================================
--- PROJECT:
--- FILE: 
--- PURPOSE: 
+-- PROJECT: Top-Paying Data Analyst Jobs & Skill Demand Analysis
+-- FILE: 5_optimal_skills.sql
+-- PURPOSE: Compare skill demand and average salaries for Data Analyst roles.
 -- ============================================================================
 
 -- Approach 1: CTE-based query (Modular and easy to extend)
@@ -54,7 +54,7 @@ ORDER BY
 LIMIT 25;
 
 -- ----------------------------------------------------------------------------
--- Approach 2: Concise Aggregation with HAVING clause (Optimized execution)
+-- Approach 2: Simpler aggregation using HAVING
 -- ----------------------------------------------------------------------------
 SELECT 
     skills_dim.skill_id,
@@ -82,18 +82,47 @@ LIMIT 25;
 
 /*
 ===============================================================================
-                               KEY INSIGHTS & FINDINGS
+                                KEY INSIGHTS
 ===============================================================================
 
 --- [ ENGLISH VERSION ] ---
 
-### Executive Summary
+### Key Findings
+By filtering for remote Data Analyst roles with salary data and high demand (>10 postings), this analysis identifies the skills offering the strongest balance of job market availability and high compensation:
 
+1. High Demand & Strong Pay:
+   - SQL: Top volume leader (107 postings, ~$36.3k avg) — essential baseline for the role.
+   - Python & R: Python leads among general-purpose languages with higher average pay ($41.9k vs $34.5k for R).
+   - T-SQL: Strong demand (31 postings) and solid pay ($37.2k) for MS SQL Server environments.
 
---- [ UKRAINIAN VERSION / УКРАЇНСЬКА ВЕРСІЯ ] ---
+2. High-Paying Specialized Tools:
+   - PostgreSQL: Highest average salary ($42.8k) among skills meeting the threshold (>10 roles).
+   - Qlik & Power BI: Outpace Tableau in average compensation ($40k and $37.3k vs $33k).
 
-### Основні результати
+3. Data Processing & Automation:
+   - Excel & Alteryx: Demonstrate that spreadsheet skills and ETL/automation tools remain highly rewarded ($37k+ avg).
 
+--- [ UKRAINIAN VERSION ] ---
+
+### Основні висновки
+Аналіз віддалених вакансій Data Analyst із вказаною зарплатою та попитом понад 10 оголошень показує навички з найкращим співвідношенням затребуваності та рівня доходу:
+
+1. Високий попит та стабільний дохід:
+   - SQL: Беззаперечний лідер за обсягом (107 вакансій, середня ЗП ~$36.3k) — базовий орієнтир для позиції.
+   - Python та R: Python переважає за рівнем оплати ($41.9k проти $34.5k у R) при високому попиті (31 вакансія).
+   - T-SQL: Висока цінність спеціалізації під MS SQL Server (31 вакансія, $37.2k).
+
+2. Нішеві інструменти з підвищеною оплатою:
+   - PostgreSQL: Найвища середня зарплата ($42.8k) серед навичок з попитом >10 вакансій.
+   - Qlik та Power BI: Показують вищу середню ЗП порівняно з Tableau ($40k і $37.3k проти $33k).
+
+3. Обробка даних та автоматизація:
+   - Excel та Alteryx: Підтверджують, що табличні інструменти та ETL-автоматизація зберігають високу цінність для роботодавців ($37k+).
+
+### Оптимальний порядок вивчення (Suggested Roadmap):
+1. База: SQL + Excel / Google Sheets
+2. Просунута аналітика: Python + PostgreSQL / T-SQL
+3. BI та автоматизація: Power BI (DAX) / Qlik + Alteryx
 ===============================================================================
 */
 

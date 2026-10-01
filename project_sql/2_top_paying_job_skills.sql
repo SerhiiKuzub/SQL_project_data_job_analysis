@@ -1,7 +1,8 @@
 -- ============================================================================
--- PROJECT:
--- FILE: 
--- PURPOSE: 
+-- PROJECT: Top-Paying Data Analyst Jobs & Skill Demand Analysis
+-- FILE: 2_top_paying_job_skills.sql
+-- PURPOSE: Identify technical skill requirements for the top 10 highest-paying 
+--          remote Data Analyst roles.
 -- ============================================================================
 
 WITH top_paying_jobs AS (
@@ -39,18 +40,34 @@ ORDER BY
 
 /*
 ===============================================================================
-                               KEY INSIGHTS & FINDINGS
+                                KEY INSIGHTS
 ===============================================================================
 
 --- [ ENGLISH VERSION ] ---
 
-### Executive Summary
+This query maps technical skills to the 10 highest-paying remote Data Analyst postings identified in query 1.
 
+- SQL is requested in all 10 postings (100% frequency).
+- Python appears in 5 of the 10 postings (50%), while R appears in 3 postings (30%).
+- Relational database dialects listed include PostgreSQL (3 postings), T-SQL (3 postings), MySQL (1 posting), and SQL Server (1 posting).
+- Spreadsheets (listed as 'spreadsheet' or 'sheets') appear in 4 postings combined.
+- BI and reporting tools in this result set include Looker (2 postings), Qlik (1 posting), and DAX (1 posting).
+- Alteryx appears in 2 postings.
 
---- [ UKRAINIAN VERSION / УКРАЇНСЬКА ВЕРСІЯ ] ---
+Note: These proportions are calculated strictly on the sample of 10 top-paying postings in this dataset and are not representative of skill frequency across the entire market.
 
-### Основні результати
+--- [ UKRAINIAN VERSION ] ---
 
+Запит виводить технічні навички, вказані у 10 найвище оплачуваних віддалених вакансіях для Data Analyst.
+
+- SQL згадується в усіх 10 вакансіях (100% покриття у цій вибірці).
+- Python присутній у 5 з 10 вакансій (50%), а R — у 3 вакансіях (30%).
+- Серед діалектів та СУБД у списку є PostgreSQL (3 вакансії), T-SQL (3 вакансії), MySQL (1 вакансія) та SQL Server (1 вакансія).
+- Електронні таблиці (зафіксовані як 'spreadsheet' або 'sheets') зустрічаються у 4 вакансіях сумарно.
+- Інструменти аналітики та візуалізації включають Looker (2 вакансії), Qlik (1 вакансія) та DAX (1 вакансія).
+- Alteryx згадується у 2 вакансіях.
+
+Примітка: Ці частки розраховані виключно на малій вибірці з 10 найвище оплачуваних вакансій цього датасету і не відображають загальну частоту вимог на всьому ринку праці.
 ===============================================================================
 */
 

@@ -1,7 +1,8 @@
 -- ============================================================================
--- PROJECT:
--- FILE: 
--- PURPOSE: 
+-- PROJECT: Top-Paying Data Analyst Jobs & Skill Demand Analysis
+-- FILE: 4_top_paying_skills.sql
+-- PURPOSE: Identify the highest-paying skills found in remote Data Analyst
+--          positions based on average annual salary.
 -- ============================================================================
 
 SELECT 
@@ -24,18 +25,32 @@ LIMIT 25;
 
 /*
 ===============================================================================
-                               KEY INSIGHTS & FINDINGS
+                                KEY INSIGHTS
 ===============================================================================
 
 --- [ ENGLISH VERSION ] ---
 
-### Executive Summary
+This query calculates the average annual salary associated with each skill in remote Data Analyst postings with non-null salary data.
 
+- Jira sits at the top of this result set with an average salary of $43,702, followed by PostgreSQL ($42,869), Python ($41,905), Confluence ($40,890), and Git ($40,740).
+- Spreadsheets show an average salary of $40,509 for 'spreadsheet', $37,059 for 'excel', and $32,763 for 'sheets'.
+- Among BI tools, Qlik averages $40,053, Power BI averages $37,371, Looker averages $34,875, and Tableau averages $33,030.
+- SQL-related skills include T-SQL ($37,240), SQL ($36,322), SQL Server ($35,590), MySQL ($33,721), and SQLite ($29,479).
+- R averages $34,531, while Slack records the lowest average in this top-25 list at $23,523.
 
---- [ UKRAINIAN VERSION / УКРАЇНСЬКА ВЕРСІЯ ] ---
+Note: Average salaries reflect only remote Data Analyst postings in this dataset that contain explicitly reported salary values.
 
-### Основні результати
+--- [ UKRAINIAN VERSION ] ---
 
+Запит розраховує середню річну заробітну плату для кожної навички серед віддалених вакансій Data Analyst із вказаним рівнем оплати.
+
+- Найвища середня зарплата в цьому списку у Jira ($43 702), далі йдуть PostgreSQL ($42 869), Python ($41 905), Confluence ($40 890) та Git ($40 740).
+- Електронні таблиці демонструють наступні значення: 'spreadsheet' — $40 509, 'excel' — $37 059, 'sheets' — $32 763.
+- Серед BI-інструментів Qlik має середню зарплату $40 053, Power BI — $37 371, Looker — $34 875, Tableau — $33 030.
+- Середній рівень для SQL та СУБД складає: T-SQL ($37 240), SQL ($36 322), SQL Server ($35 590), MySQL ($33 721) та SQLite ($29 479).
+- R показує середнє значення $34 531, а Slack замикає топ-25 із показником $23 523.
+
+Примітка: Середні значення розраховані виключно на основі віддалених вакансій із заголовком 'Data Analyst' у цьому датасеті, для яких було явно вказано річну заробітну плату.
 ===============================================================================
 */
 
